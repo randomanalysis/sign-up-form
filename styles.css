@@ -1,0 +1,37 @@
+@font-face {
+    font-family: Norse-Bold;
+    src: url('/home/adam/.local/share/fonts/Norse-Bold.otf');
+  }
+
+.left-image {
+    background-position: center center;
+    background-size: cover;
+    background-image: url(images/halie-west-25xggax4bSA-unsplash.jpg);
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 0px;
+    background-color: rgb(80, 80, 80);
+    opacity: 0.7;
+    color: white;
+    font-family: Norse-Bold;
+    font-size: 85px;
+}
+
+.banner img {
+    height: 100px;
+}
+
+.left-image p {
+    color: white;
+    font-size: 1rem;
+}
+
+.left-image a {
+    color: white;
+    font-size: 1rem;
+}
+
