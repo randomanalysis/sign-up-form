@@ -8,51 +8,85 @@
     <link rel='stylesheet' href="styles.css">
 </head>
 <body>
-    <div class="left-image">
-        <div class="banner">
-            <img src="images/odin-lined.png" alt="Odin image" />
-            ODIN
-        </div>
+    <div class="contents">
+        <div class="left-image">
 
-        <p class="attribution">
-            Photo by
-            <a
-              href="https://unsplash.com/@haliewestphoto?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
-              >Halie West</a
-            >
-            on
-            <a
-              href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
-              >Unsplash</a
-            >
-          </p>
+            <div class="banner">
+                <img src="images/odin-lined.png" alt="Odin image" />
+                ODIN
+            </div>
 
-
-    </div>
-
-    <div class="right-text">
-
-        <div class="blurb">
-            <p>This is not a real online serice! You know you need something like this in
-            your life to help you realise your deepest dreams. Sign up <em>now</em> to get started"</p>
-
-            <p>You <em>know</em> you want to.</p>
-        </div>
-
-        <div form-section>
+            <p class="attribution">
+                Photo by
+                <a
+                href="https://unsplash.com/@haliewestphoto?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                >Halie West</a
+                >
+                on
+                <a
+                href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                >Unsplash</a
+                >
+            </p>
             
-            <form>
-                <div class="input">
-                    <h4>Let's do this!</h4>
-                </div>
-
-                <button type="submit" id="create-account">Create Account</button>
-
-            </form>
         </div>
-        <p>Already have an account? <a href="#">Log In</a></p>
 
-    
+        <div class="right-text">
+
+            <div class="blurb">
+                <p>This is not a real online serice! You know you need something like this in
+                your life to help you realise your deepest dreams. Sign up <em>now</em> to get started"</p>
+
+                <p>You <em>know</em> you want to.</p>
+            </div>
+
+            <div form-section>
+                
+                <form>
+                    <div class="input">
+                        <h4>Let's do this!</h4>
+
+                        <input type="text" name="first-name" value="" placeholder="Joe" 
+                        pattern="^[^0-9]+$" size="30" maxlength="100" required/>
+
+                        <label for="first-name" data-help="Please enter your first name">First Name</label>
+
+                        <input type="text" name="last-name" value="" placeholder="Bloggs" 
+                        pattern="^[^0-9]+$" size="30" maxlength="100" required/>
+
+                        <label for="last-name" data-help="Please enter your last name">Last Name</label>
+
+                        <input id="email" placeholder="joebloggs@emai.com" name="email" type="email" value="" 
+                        size="30" maxlength="100" required>
+      
+                        <label for="email" data-help="Format email@email.com">Email</label>
+
+                        <input id="tel" placeholder="+44 12345 678910" name="tel" value=""
+                        size="30" >
+
+                        <label for="tel" data-help="Please enter your telephone number">Telephone Number</label>
+                    
+                        <input id="password" name="password", value=""
+                        size="30" required>
+
+                        <label for="password" data-help="Please use at least one capital letter and one number">Password</label>
+
+                        <input id="confirm-password" name="confirm-password", value=""
+                        size="30" required>
+
+                        <label for="confirm-password" data-help="Does not match password">Confirm Password</label>
+                    </div>
+
+                    <button type="submit" id="create-account">Create Account</button>
+
+
+
+                </form>
+            </div>
+            <p>Already have an account? <a href="#">Log In</a></p>
+
+        
+        </div>
     </div>
 
 
